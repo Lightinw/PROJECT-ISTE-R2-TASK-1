@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    background-color:darkgrey;
+}
+
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding:0 0 8%;
+}
+
+.logo{
+    width: 5.5rem;
+    
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 40px;
+   
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #ffff;
+    font-size: 16px;
+    font-weight: auto;
+    
+}
+
+nav ul li a:hover{
+    color: #B799FF;
+}
+
+.content{
+    text-align: center;
+    position: absolute;
+
+}
+.content h1{
+    font-size: 160px;
+    color:#B799FF;
+    
+
+}
+.content h2{
+    font-size: 100px;
+    color: #E6FFFD;
+    
+}
+.content a{
+    color: #E6FFFD;
+    font-size: 30px;
+    text-decoration: none;
+    display:inline-block ;
+    padding: 14px 70px;
+    border: 2px solid #B799FF;
+    margin-top:60px ;
+    margin-left: 20px;
+    border-radius: 50px;
+    font-size: 24px;
+}
+
+.content a:hover{
+    color:#E6FFFD;
+    background-color: #B799FF;
+}
+
+.back-video{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.info{
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: rgb(26, 25, 25);
+    position: relative;
+
+}
+
+.info img{
+    
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-right:50px ;
+}
+.info p{
+    
+    font-size: 24px;
+    font-weight: 10px;
+    float: left;
+    color: #B799FF;
+}
+
+.time{
+    color: #fff;
+    font-weight: 700;
+}
+
+.schedule{
+    position: absolute;
+    font-weight: 700;
+    color: #fff;
+    font-size: 50px;
+    top: 4px;
+}
+
+@media screen and (max-width: 450px){
+    /*mobile*/
+    .content h1{
+        font-size: 60px;
+        position: relative;
+        left: -30px;
+        top: -150px;
+
+    }
+    .content h2{
+        font-size: 30px;
+        position: relative;
+        left: -40px;
+        top: -150px;
+    }
+    nav ul li{
+        display: hidden;
+        visibility: hidden;
+        flex-direction:row;
+        list-style: none;
+        margin: 40px;
+       
+    }
+    .info p{
+    
+        font-size: 13px;
+        width:70%;
+        position: absolute;
+        top: 200px;
+        left: 30px;
+    }
+    .logo{
+        position: absolute;
+        top: 20px;
+        margin: 4px;
+        height: 50px;
+        width: 50px;
+    }
+    .content a{
+        font-size: 18px;
+        width:70px ;
+        height: 30px;
+        padding: 20px;
+        
+    }
+    .buy{
+        
+        display: none;
+        visibility: hidden;
+    }
+    .info{
+        width: 110%;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        background-color: rgb(26, 25, 25);
+        position: relative;
+    
+    }
+    .info img{
+        height: 120px;
+        width: 120px;
+        position: absolute;
+        top: 69px;
+    }
+    .schedule{
+        font-size: 29px;
+        position: absolute;
+        left: 50px;
+        top: 20px;
+    }
+    
+
+
+    
+
+}
